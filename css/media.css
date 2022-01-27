@@ -1,0 +1,58 @@
+
+
+
+
+/*placing the highest pixel-amount above the other settings gives us the hiearchy we need*/
+
+
+
+@media (min-width:800px){
+
+    nav  { 
+    
+        display: block;
+    
+    
+    }
+    
+    label {
+        display: none;
+    }
+    
+    
+    
+    }
+
+
+@media (max-width:800px){
+
+    nav ul {
+
+        display:list-item;
+        list-style: none;
+     
+
+    }
+
+    .container {
+
+        grid-template-columns: auto auto;
+    }
+
+
+
+
+
+    @media (max-width:600px){
+
+
+        .container {
+        
+            grid-template-columns: none;
+        }
+        
+        }
+        
+
+   
+}

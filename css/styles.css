@@ -1,0 +1,118 @@
+body 
+ {
+
+    min-height: 100vh;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto; /*with auto we split the space relative to the dimensions of objects, the fractions we have always make up all, so if we have one fraction that is all, that is our integer*/
+    
+
+    /*with this grid we have a website that expands to encompass whatver viewport there is, every grid container/item/ that is
+    link:: https://chrisbracco.com/css-sticky-footer-effect/*/
+    
+
+ 
+
+}
+
+
+
+
+
+
+
+.logo {
+
+    width: 100px;
+}
+
+ label {
+
+    float: right;
+ }
+
+ nav {
+
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    float: right;
+    width: 100%;
+    top: 0;
+    
+ 
+
+
+
+    /*because our position is fixed our margin has no effect on elements*/
+ }
+
+
+
+
+nav ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+  
+
+
+}
+
+
+
+
+li {
+
+    padding: 0 10vw 0  0 ;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+#hamburger-menu {
+
+    display: none;
+    /*this is to not have the checkbox visible, the input-type checkbox has an id*/
+
+}
+
+
+#hamburger-menu:checked ~ nav {
+
+    display: block;
+}
+
+a {
+
+    text-decoration:none;
+}
+
+.container {
+ 
+display: grid;
+grid-template-columns: auto auto auto auto;
+column-gap: 4ch;
+margin: 5vw;
+
+
+  
+}
+ 
+
+.column {
+
+    max-width: 450px;
+}
+
+
+footer {
+
+    text-align: center;
+margin-bottom: 20px;
+  
+   
+
+}
